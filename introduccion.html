@@ -47,7 +47,199 @@
     b es para negritas
     blockquote es para citas o bloques de texto
     -->
+    <!--esta es la forma de anidar etiquetas -->
+    <p>
+        <p>
+            <u>
+                texto
+            </u>
+        </p>
+    </p>
+    <p> <em><strong>ipsum dolor, sit amet consectetur adipisicing elit.</strong></em> Accusamus, aliquid quasi cupiditate consequatur cum nemo beatae 
+        consequuntur sapiente accusantium suscipit?</p>
 
-</body>
-<!--Aqui termina el cuerpo de nuestro documento-->
-</html>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Ab ratione ex rerum labore voluptas quas quibusdam atque non aut. Officia?</p>
+
+    <hr>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim laudantium corporis cum iusto, exercitationem consectetur voluptatum sed. Autem tenetur voluptates qui earum nemo, quibusdam vero, at laboriosam iure in commodi, pariatur aliquid consequuntur. Sed quidem facere ea aspernatur, magni corporis. Iste cupiditate possimus similique harum sint, vel temporibus, repellat laborum nesciunt porro 
+        inventore recusandae sunt, adipisci facilis in odio eligendi!</p>
+    <br>
+
+    <!--
+        Etiquetas de enlace 
+
+        nos permiten la navegacion por medio de hipervinculos o links que van a realizar la conexion
+        y referencias otros archivos  o paginas web dentro de la misma aplicacion o de manera externa
+        
+        href: atributo que nos permite definir la ubiccion de la pagina a la que nos vamos a enlazar.
+        este atributo puede ser una URL, o una ubicacion dentro de nuestra carpeta de assets. pondremos 
+        dentro de las comillas la direccion de la pagina o recusro que queremos enlazar.
+
+        target: el atributo que nos permite definir la ventana de destino, que puede ser una nueva 
+        venatana o la misma.
+            - _blank: abre una nueva ventana.
+            - _self: abrir en la misma ventana, este es el atributo por defecto .
+    -->
+        <a href="http://www.google.com" target="_blank">visita pagina de google</a>
+        <br>
+        <br>
+        <a href="">este es un enlace que no hace referencia a nada</a>
+        <br>
+        <br>
+        <a href="assets/perritoplayero.jpg" target="_blank">abre una foto de un perrito playero</a>
+
+        <!-- 
+            Otros enlaces que nos pueden servir mas adelante
+            - enlaces de correo: para vincular correos 
+            mailto:brandonzamora@gmail.com
+
+            - enlaces de descarga: dentro del atributo se puede colocar 
+            la direccion de la pagina o archivo que se va a descargar, y el valor download que nos permite
+            definir el nombre del archivoque se va a descargar.
+
+        -->
+        <br>
+        <br>
+        <a href="mailto:brandonzamora@gail.com">Enviame un correo electronico</a>
+        <br>
+        <br>
+        <a href="assets/perritoplayero.jpg" download>descarga la imagen de perrito playero</a>
+
+        <!--
+            Atibutos de listas ordenadas:
+
+        - start para definir el orden inicial, por defecto es 1
+        - type pra indicar el tipo de lista que se va a crear
+            - decimal para numeros enteros
+            - lower-alpha para letras minusculas
+            - lower -roman para letras minusculas en romano
+            - upper-alpha para letras mayusculas
+            - upper-roman para mayuscas en romano
+        - reversed: para invertir el orden de los elementos
+
+        -->
+        <h3>Esto es unalista ordenada de perritos sin atributos</h3>
+        <ol>
+            <li>dalmata</li>
+            <li>labrador</li>
+            <li>chihuahua</li>
+            <li>pitbull</li>
+        </ol>
+        <br>
+        <br>
+        <ol type="A" start="6">
+            <li>dalmata</li>
+            <li>labrador</li>
+            <li>chihuahua</li>
+            <li>pitbull</li>
+        </ol>
+        <br>
+        <br>
+        <ol type="a" start="2">
+            <li>dalmata</li>
+            <li>labrador</li>
+            <li>chihuahua</li>
+            <li>pitbull</li>
+        </ol>
+
+        <!--
+            - Listas desordenadas: Las listas desordenadas son aquellas que nos sirven para mostrar los elementos sin ningún tipo de orden,
+            simplemente precedido por una viñeta que puede ser un punto, un cuadrado, etc.
+        Atributos de listas desordenadas:
+        - style para definir el estilo de la lista
+            - circle
+            - disc
+            - square
+ 
+        -->
+        <h3>Esta es una lista desordenada de perritos</h3>
+        <br>
+        <br>
+        <ul>
+            <li>dalmata</li>
+            <li>labrador</li>
+            <li>chihuahua</li>
+            <li>pitbull</li>
+        </ul>
+
+        <h3>Esta es una lista desordenada de perritos con atributos </h3>
+        <ul type="square">
+            <li>dalmata</li>
+            <li>labrador</li>
+            <li>chihuahua</li>
+            <li>pitbull</li>
+        </ul>
+        <!--listas de definicion-->
+        <dl>
+            <dt>Beast of Bodmin</dt>
+            <dd>A large feline inhabiting Bodmin Moor.</dd>
+        
+            <dt>Morgawr</dt>
+            <dd>A sea serpent.</dd>
+        
+            <dt>Owlman</dt>
+            <dd>A giant owl-like creature.</dd>
+        </dl>
+        <!--
+            Etiquetas de imagen (img)
+            
+
+            Etiquetas de imagen (img)
+
+            La etiqueta img nos permite agregar una imagen en un documento web. Entre los formatos aceptados más populares para las imágenes son: jpeg, png, gif y webp.
+
+            Debemos tener en centa que el tamaño de la imagen influye en el proceso de carga de la página. Y por tanto se suelen preparar las imagnes para que su peso sea menor. https://tinypng.com/
+
+            Los atributos de la etiqueta img son:
+
+            - src: es el atributo que nos permite definir la ubicación de la imagen.
+            - alt: es el atributo que nos permite definir una descripción de la imagen.
+            - width: es el atributo que nos permite definir el ancho de la imagen.
+            - height: es el atributo que nos permite definir el alto de la imagen.
+
+        -->
+        
+       <img src="/assets/perritoplayero.jpg" width="400px" >
+
+       <!--Etiquetas de divisiones (div y span)
+        las etiquetas div y span no tienen ningun significado especial 
+        -->
+
+    <div align="center" style="color: blueviolet; font-size: larger; font-family: Verdana, Geneva, Tahoma, sans-serif;"> 
+        <img src="/assets/img/perritoplayero.jpg" alt="Perrito Playero" width="200" height="200">
+        <p>Este texto donde vemos a un bonito perro playero. Este texto está dentro de un div, por lo que si le agregamos estilos directamente al div, podemos agregar colores, fuentes, etc.</p>
+        <p>Incluso podemos agregar listas a este div, y como te puedes dar cuenta, también se le agregan los estilos, por lo que los elementos de la lista también se centrarán de un color morado.</p>
+        <span>Esto es un span dentro de otro parrafo </span>
+        <ul>
+            <li> Un elemento de lista centrado </li>
+            <li> Otro elemento de lista centrado </li>
+        </ul>
+        </div>
+    
+    <div align="center" style="border: 10px dotted blue;">
+        <h3 >Ejemplo de div y span </h3>
+            <p>
+            Esto es un párrafo dentro de un div,
+            <span style="color: red;"> y esto un span dentro de un párrafo. </span>
+            </p>
+    </div>
+        
+
+
+    </body>
+    <!--
+        <dl> 
+    <dt>Gato</dt> definition term!
+    <dd>Mamífero carnívoro de la familia de los Félidos, digitígrado, doméstico, de unos cinco decímetros de largo desde la cabeza hasta el arranque de la cola, que por sí sola mide dos decímetros aproximadamente. Pareciera que planean dominar al mundo</dd>
+    <dt>Perro</dt>
+    <dd>Mamífero doméstico de la familia de los cánidos, de tamaño, forma y pelaje muy diversos, según las razas, que tiene olfato muy fino y es inteligente y muy leal a su dueño. Es el mejor amigo del hombre</dd>
+</dl>
+
+    -->
+    
+    <!--Aqui termina el cuerpo de nuestro documento-->
+    <!--La etiqueta hr nos sirve para dar una separacion entre parrafos (veremos una linea horizontal
+        que usaremos de separador, no necesita una etiqueta de cierre)-->
+    </html>
